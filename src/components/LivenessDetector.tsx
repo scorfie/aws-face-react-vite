@@ -97,6 +97,7 @@ export const LivenessDetector: React.FC<LivenessDetectorProps> = ({
         <FaceLivenessDetector
           sessionId={sessionId}
           region="us-east-1" // Replace with your AWS region
+          disableStartScreen={true}
           onAnalysisComplete={handleAnalysisComplete}
           onError={(error) => {
             console.error(error);
