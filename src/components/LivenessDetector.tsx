@@ -63,6 +63,10 @@ export const LivenessDetector: React.FC<LivenessDetectorProps> = ({
 
       // Send a message to the native mobile app wrapping this webview
       postMessageToWebView({ sessionId, data });
+
+      // Send custom URL scheme value
+      const isLiveValue = data?.isLive ?? false;
+      window.location.href = `authnex.face.rekognition://liveness?sessionId=${sessionId}&isLive=${isLiveValue}`;
       
       if (onAnalysisComplete) {
         // We will pass the 'isLive' property. Adjust this if the API returns a different structure.
