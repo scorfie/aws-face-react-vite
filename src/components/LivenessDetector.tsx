@@ -59,6 +59,9 @@ export const LivenessDetector: React.FC<LivenessDetectorProps> = ({
       
       const data = await response.json();
       console.log("Liveness result:", data);
+
+      // Send a message to the native mobile app wrapping this webview
+      postMessageToWebView({ sessionId, data });
       
       if (onAnalysisComplete) {
         // We will pass the 'isLive' property. Adjust this if the API returns a different structure.
