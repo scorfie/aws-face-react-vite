@@ -22,7 +22,7 @@ export const LivenessDetector: React.FC<LivenessDetectorProps> = ({
     const initializeSession = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch('/api/create-session', {
+        const response = await fetch('https://aws-face-api.vercel.app/api/create-session', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ export const LivenessDetector: React.FC<LivenessDetectorProps> = ({
     console.log("Analysis completed by FaceLivenessDetector component.");
     
     try {
-      const response = await fetch(`/api/get-results/${sessionId}`);
+      const response = await fetch(`https://aws-face-api.vercel.app/api/get-results/${sessionId}`);
       
       if (!response.ok) {
         throw new Error(`Failed to get results: ${response.statusText}`);
