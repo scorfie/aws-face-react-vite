@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@aws-amplify/ui-react';
 import { FaceLivenessDetector } from '@aws-amplify/ui-react-liveness';
 import React, { useEffect, useState } from 'react';
+import { postMessageToWebView } from "../utils/webView";
 
 interface LivenessDetectorProps {
   onAnalysisStart?: () => void;
