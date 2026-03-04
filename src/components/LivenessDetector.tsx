@@ -66,7 +66,7 @@ export const LivenessDetector: React.FC<LivenessDetectorProps> = ({
 
       // Send custom URL scheme value
       const isLiveValue = data?.isLive ?? false;
-      window.location.href = `authnex.face.rekognition://liveness?sessionId=${sessionId}&isLive=${isLiveValue}`;
+      window.location.href = `com.authnex.aws-face-rekognition://liveness?sessionId=${sessionId}&isLive=${isLiveValue}`;
       
       if (onAnalysisComplete) {
         // We will pass the 'isLive' property. Adjust this if the API returns a different structure.
