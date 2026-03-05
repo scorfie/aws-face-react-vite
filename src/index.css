@@ -1,24 +1,24 @@
 :root {
   --primary-color: #0070f3;
   --primary-hover: #0051a8;
-  --background-dark: #121212;
-  --background-card: #1e1e1e;
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
-  --success-color: #00c853;
-  --error-color: #ff3d00;
+  --background-light: #ffffff;
+  --background-card: #f8f9fa;
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --success-color: #00a843;
+  --error-color: #d32f2f;
   --border-radius: 12px;
   --transition-speed: 0.3s;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background-dark);
+  background-color: var(--background-light);
   color: var(--text-primary);
   display: flex;
   justify-content: center;
