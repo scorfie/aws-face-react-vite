@@ -96,7 +96,7 @@ export const LivenessDetector: React.FC<LivenessDetectorProps> = ({
   }
 
   return (
-    <ThemeProvider>
+    <ThemeProvider colorMode="light">
       <div className="liveness-detector-container">
         <FaceLivenessDetector
           sessionId={sessionId}
