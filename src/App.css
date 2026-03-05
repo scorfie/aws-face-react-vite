@@ -1,9 +1,3 @@
-/* Force the video to stay within the React-defined bounds */
-video {
-  -webkit-playsinline: playsinline !important;
-  object-fit: cover !important;
-}
-
 .app-container {
   display: flex;
   flex-direction: column;
@@ -22,9 +16,9 @@ video {
   background-color: var(--background-card);
   padding: 2rem;
   border-radius: var(--border-radius);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   transition: transform var(--transition-speed) ease;
 }
 
@@ -70,7 +64,7 @@ video {
   max-width: 600px;
   border-radius: var(--border-radius);
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* Liveness component internal styles */
@@ -89,7 +83,7 @@ video {
 .spinner {
   width: 40px;
   height: 40px;
-  border: 4px solid rgba(255, 255, 255, 0.1);
+  border: 4px solid rgba(0, 0, 0, 0.1);
   border-left-color: var(--primary-color);
   border-radius: 50%;
   animation: spin 1s linear infinite;
@@ -161,7 +155,6 @@ video {
   background-color: transparent;
 }
 
-        
 /* Mobile responsive adjustments */
 @media (max-width: 600px) {
   .app-container {
@@ -180,6 +173,6 @@ video {
   .action-card {
     border-radius: 0;
     border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
   }
 }
